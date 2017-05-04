@@ -143,18 +143,18 @@ public class StackUtil
                     return false;
                 }
             }
-            else if(c==']')
+            else if (c == ']')
             {
-                char top=(char)temp.pop();
-                if(top!='[')
+                char top = (char)temp.pop();
+                if (top != '[')
                 {
                     return false;
                 }
             }
-            else if(c==')')
+            else if (c == ')')
             {
-                char top=(char)temp.pop();
-                if(top!='(')
+                char top = (char)temp.pop();
+                if (top != '(')
                 {
                     return false;
                 }
