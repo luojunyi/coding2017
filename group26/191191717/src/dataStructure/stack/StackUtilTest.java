@@ -37,6 +37,7 @@ public class StackUtilTest
   //  @Test
     public void testRemove()
     {
+<<<<<<< HEAD
         Stack<Integer> s = new Stack<Integer>();
         s.push(1);
         s.push(2);
@@ -49,6 +50,20 @@ public class StackUtilTest
     public void testGetTop()
     {
         Stack<Integer> s = new Stack<Integer>();
+=======
+        Stack<Integer> s = new Stack();
+        s.push(1);
+        s.push(2);
+        s.push(3);
+        StackUtil.remove(s, 2);
+        Assert.assertEquals("[1, 3]", s.toString());
+    }
+    
+  //  @Test
+    public void testGetTop()
+    {
+        Stack<Integer> s = new Stack();
+>>>>>>> refs/remotes/origin/master
         s.push(1);
         s.push(2);
         s.push(3);
